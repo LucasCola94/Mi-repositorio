@@ -33,6 +33,10 @@ $tercery-color:black;
     font-size: 80px;
     text-transform: uppercase;
     color: $tercery-color; 
+    @media screen and (max-width: 720px){
+        font-size: 40px;
+        top: 10%;
+    }
     
     
      
@@ -43,7 +47,10 @@ $tercery-color:black;
     left: 20%;
     font-size: 70px;
     text-transform: uppercase;
-    color: $tercery-color; 
+    color: $tercery-color;
+    @media screen and (max-width: 720px){
+        font-size: 40px;
+    }
     
     
      
@@ -57,7 +64,10 @@ $tercery-color:black;
     top: 45%;
     left: 40%;
     font-size: 50px;
-    color: $tercery-color; 
+    color: $tercery-color;
+    @media screen and (max-width: 720px){
+        display: none;;
+    }
     
 }
 .Subtitulo3{
@@ -69,7 +79,10 @@ $tercery-color:black;
     text-transform: uppercase;
     text-shadow: 
       -1px -1px 1px #eae2b7, 
-      4px 3px 1px #363636; 
+      4px 3px 1px #363636;
+      @media screen and (max-width: 720px) {
+          font-size: small;
+      } 
     
 }
 
@@ -98,6 +111,9 @@ $tercery-color:black;
     letter-spacing: .015em;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 720px){
+        display: none;
+    }
     
     
 }
@@ -131,6 +147,10 @@ $tercery-color:black;
     margin: 60px;
     cursor: zoom-in;
     color: $primary-color;
+    @media screen and (max-width: 720px) {
+        display: flex;
+        flex-direction: column;}
+        padding: 5px;
     
     
 }
@@ -165,13 +185,18 @@ $tercery-color:black;
     padding: 20px;
     color: $secondary-color;
     -webkit-transition: 1s linear;
-    transition: background-color .5s; }
+    transition: background-color .5s; 
+     @media screen and (max-width: 720px) {
+        flex-direction: column;
+        height: 100%;
+        justify-content:center;
+        margin: 30px 40px;}
     .footer a:hover {
-      background-color: #eae2b7; }
+      background-color: #eae2b7;}
 
     
-
-
+    
+    }
 .imagen{
     display: flex;
     flex-flow: column wrap;
@@ -213,4 +238,7 @@ $tercery-color:black;
     height: 720px;
 
     object-fit: cover;
+    @media screen and (max-width: 720px) {
+        height: 100%;
+        width: 100%;}
 }
