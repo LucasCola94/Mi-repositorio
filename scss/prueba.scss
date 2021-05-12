@@ -7,6 +7,13 @@ $primary-color:#003049;
 $secondary-color:#eae2b7;
 $tercery-color:black;
 
+
+@mixin margenes {
+    margin: 20px;
+    
+}
+
+
 .body{font-family: 'Montserrat', sans-serif;
     background-color: $primary-color ;
     color: $secondary-color;
@@ -106,7 +113,7 @@ $tercery-color:black;
     color: $primary-color;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    @include margenes;
     line-height: 1.8em;
     letter-spacing: .015em;
     justify-content: center;
@@ -158,7 +165,7 @@ $tercery-color:black;
 
 
 .tarjetas2{
-    margin: 20px;
+    @include margenes;
     padding: 20px;
     color: $primary-color;
     
@@ -181,7 +188,7 @@ $tercery-color:black;
     display: flex;
     columns: 3;
     justify-content: space-around;
-    margin: 20px;
+    @include margenes;
     padding: 20px;
     color: $secondary-color;
     -webkit-transition: 1s linear;

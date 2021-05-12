@@ -57,7 +57,8 @@
   font-size: 50px;
   color: #eae2b7;
   text-transform: uppercase;
-  text-shadow: -1px -1px 1px #eae2b7,  4px 3px 1px #363636; }
+  text-shadow: -1px -1px 1px #eae2b7, 
+ 4px 3px 1px #363636; }
   @media screen and (max-width: 720px) {
     .Subtitulo3 {
       font-size: small; } }
