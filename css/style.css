@@ -42,37 +42,6 @@
   position: relative;
   left: 100px; }
 
-/*.Titulo{
-    position: absolute;
-    top: 25%;
-    right: 10%;
-    left: 15%; 
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: $tercery-color;
-   
-    @media screen and (min-width: 1024px){
-        top: 25%;
-    right: 10%;
-    left: 10%;
-    font-size: 90px; 
-        
-
-
-    }
-    
-    @media only screen and (min-width: 768px){
-        font-size: 70px;
-        top: 30%;
-        right: 10%;
-        left: 10%; 
-    }
-
-    
-    
-    
-     
-}*/
 .Subtitulo {
   position: absolute;
   top: 48%;
@@ -131,7 +100,11 @@
   letter-spacing: .015em;
   justify-content: center;
   align-items: center; }
-  @media screen and (max-width: 1024px) {
+  .Reservas input {
+    margin: 5px 10px; }
+  .Reservas legend {
+    font-size: 18px; }
+  @media screen and (max-width: 1084px) {
     .Reservas {
       display: block;
       text-align: center;
@@ -190,6 +163,11 @@
 .Video {
   text-align: center;
   margin: 5px; }
+
+@media screen and (min-width: 1000px) {
+  .VideoYoutoube {
+    height: 300px !important;
+    width: 700px !important; } }
 
 .Formularios {
   color: #eae2b7;
