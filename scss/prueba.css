@@ -16,43 +16,51 @@
 }
 
 .menu {
-  background-color: #C39D6F;
+  background-color: #003049 !important;
+  color: #eae2b7 !important;
+}
+
+.navbar-brand {
+  font-size: 2.25rem;
+}
+
+.encabezado a {
+  text-decoration: none;
   color: #eae2b7;
+  font-size: 19px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  padding: 0 20px;
+  text-shadow: rgba(185, 185, 185, 0.233) 0 1px;
+  position: relative;
+  left: 100px;
 }
 
 .Titulo {
   position: absolute;
-  top: 20%;
-  left: 28%;
-  font-size: 80px;
+  top: 25%;
+  right: 10%;
+  left: 15%;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: black;
 }
 
-@media screen and (max-width: 1340px) {
+@media screen and (min-width: 1024px) {
   .Titulo {
-    font-size: 60px;
-    top: 20%;
-    left: 25%;
-    right: 15%;
+    top: 25%;
+    right: 10%;
+    left: 10%;
+    font-size: 90px;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media only screen and (min-width: 768px) {
   .Titulo {
-    font-size: 30px;
-    top: 15%;
-    left: 15%;
-    right: 15%;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .Titulo {
-    font-size: 20px;
-    top: 15%;
-    left: 15%;
-    right: 15%;
+    font-size: 70px;
+    top: 30%;
+    right: 10%;
+    left: 10%;
   }
 }
 
@@ -83,24 +91,15 @@
 
 .Subtitulo {
   position: absolute;
-  top: 45%;
+  top: 48%;
   left: 40%;
   font-size: 50px;
   color: black;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .Subtitulo {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1340px) {
-  .Subtitulo {
-    font-size: 30px;
-    top: 45%;
-    left: 40%;
-    right: 15%;
   }
 }
 
@@ -158,9 +157,11 @@
           align-items: center;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .Reservas {
-    display: none;
+    display: block;
+    text-align: center;
+    margin: 10px;
   }
 }
 
@@ -196,44 +197,23 @@
 }
 
 .tarjetas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 20px;
   padding: 20px;
-  margin: 60px;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
   color: #003049;
-  padding: 5px;
 }
 
-@media screen and (max-width: 720px) {
-  .tarjetas {
-    padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.animacion1 {
+  -webkit-transition: -webkit-filter 0.1s;
+  transition: -webkit-filter 0.1s;
+  transition: filter 0.1s;
+  transition: filter 0.1s, -webkit-filter 0.1s;
+  -webkit-filter: grayscale 100%;
+          filter: grayscale 100%;
 }
 
-@media screen and (max-width: 360px) {
-  .tarjetas {
-    padding: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.animacion1:hover {
+  -webkit-filter: #eae2b7 0%;
+          filter: #eae2b7 0%;
 }
 
 .tarjetas2 {
@@ -354,7 +334,14 @@
 }
 
 .Menufooter {
-  color: white !important;
+  color: white;
+  -webkit-transition: 1s linear;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.Menufooter a:hover {
+  color: #C39D6F;
 }
 
 .lucasimg {
